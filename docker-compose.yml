@@ -1,0 +1,11 @@
+services:
+
+  app:
+    container_name: scim_client
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - 8080:80
+    volumes: 
+      - .:/app
